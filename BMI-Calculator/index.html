@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Poppins:wght@400;600;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap" rel="stylesheet">
+    <title>Si Paling BMI</title>
+</head>
+<body>
+    <div class="container">
+        
+        <div>
+            <!-- Pengantar -->
+            <h1>
+                Apa itu BMI (Body Mass Index)?
+            </h1>
+            
+            <img src="assets/images/diet-ilustration.png" alt="diet-ilustration" class="img">
+
+            <p class="para">
+                <b>BMI</b> adalah indikator pengukuran yang digunakan untuk menentukan kategori berat badan ideal atau tidak. BMI dikembangkan oleh Adolphe Quetelet selama abad ke-19. Melalui hasil perhitungan BMI, Anda akan mengetahui kategori berat badan, yaitu kurus, ideal, berlebihan, atau bahkan obesitas.
+            </p>
+
+            <p class="para">
+                Metode perhitungan ini juga bisa menjadi alat skrining untuk melihat risiko kesehatan tertentu. Menurut WHO, hasil BMI yang tidak normal/ideal akan meningkatkan risiko terkena beberapa penyakit. Maka dari itu, sekiranya Anda perlu memahami bagaimana cara menghitung BMI secara tepat untuk meminimalisir kenaikan atau penurunan berat badan secara berlebihan. 
+            </p>
+
+            <p class="para">
+                Adapun beberapa masalah kesehatan yang salah satu faktor risikonya adalah obesitas, di antaranya penyakit kardiovaskular, kematian dini, hipertensi, dan diabetes. 
+            </p>
+
+            <h1>
+                Cara Menghitung Berat Badan Ideal dengan Body Mass Index (BMI)
+            </h1>
+
+            <p class="para">
+                Ini adalah cara menghitung berat badan ideal yang cukup banyak digunakan. Namun, BMI umumnya hanya dapat digunakan untuk orang dengan umur 20 tahun atau lebih. Untuk di bawah 20 tahun, dianjurkan untuk menggunakan cara lain.
+            </p>
+
+            <p class="para">
+                Dengan membagi berat badan dalam kilogram dengan tinggi badan dalam meter persegi, perhitungan BMI akan membandingkan berat badan dengan tinggi badan. Terdapat dua hal yang perlu diperhatikan saat menghitung dengan BMI yaitu rumus dan kategori berat badan.
+            </p>
+
+            <p class="para">
+                Di bawah ini adalah kategori berat badan berdasarkan hasil angka BMI
+            </p>
+
+            <ul>
+                <li><b>Di bawah 18.5</b> = Berat badan kurang proporsional</li>
+                <li><b>Di antara 18.5 - 22.9</b> = Berat badan ideal</li>
+                <li><b>Di antara 23 - 29.9</b> = Berat badan berlebih (berpotensi obesitas) </li>
+                <li><b>Di atas 30</b> = Obesitas</li>
+            </ul>
+            <hr>
+            <h3>
+                Penasaran dengan kalkulator BMI?
+            </h3>
+
+            <p style="line-height: .3;">Yuk hitung sekarang!</p>
+
+            <br>
+
+            <!-- BMI Calc -->
+            <div class="bmi_wrapper">
+                <h2 style="text-align: center;">
+                    Kalkulator BMI
+                </h2>
+
+                <form>
+                        <label class="title">Jenis Kelamin</label>
+                        
+                        <label class="radio_label">
+                            <input type="radio" name="gender" value="male" checked>
+                            Laki-laki
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <label class="radio_label">
+                            <input type="radio" name="gender" value="female">
+                            Perempuan
+                            <span class="checkmark"></span>
+                        </label>
+
+                    <p class="inputs">
+                        <label class="title" >Tinggi (cm)</label>
+                        <input type="number" id="height" min="1" placeholder="Masukkan tinggi kamu disini">
+                    </p>
+                    <p class="inputs">
+                        <label class="title">Berat (kg)</label>
+                        <input type="number" id="weight" min="1" placeholder="Masukkan berat kamu disini">
+                    </p>
+
+                    <button class="calc_btn" onclick="submitForm()">Hasil</button>
+                    <button class="reset_btn" type="reset" onclick="resetForm()">Reset</button>
+
+                    <p id="results"></p>
+                    <p id="category"></p>
+                    <p id="advice"></p>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
